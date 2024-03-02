@@ -1,0 +1,136 @@
+<html>
+
+<head>
+
+    <title>RedStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6a9fa1da10.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore"
+                            width="125px" /></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="signin.html" class="active">SignIn</a></li>
+                        <li><a href="signup.html">SignUp</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="signin-section">
+        <div class="container">
+            <div class="signin-form">
+                <h2>Sign In</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Your username">
+                
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Your password">
+                
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="rememberMe" name="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                
+                    <button type="submit">Sign In</button>
+                
+                    <div class="signup-link">
+                        <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iso mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                        <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="" />
+                    <p>
+                        Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                        Sports Accessible to the Many.
+                    </p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright &copy; 2021 - Red Store</p>
+        </div>
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == '0px') {
+                MenuItems.style.maxHeight = '200px';
+            } else {
+                MenuItems.style.maxHeight = '0px';
+            }
+        }
+    </script>
+</body>
+
+</html>
